@@ -1,6 +1,0 @@
-# pack-refs with: peeled fully-peeled 
-72caa24ecb0d5b4b02951f421bc39390f2226273 refs/remotes/github/TimeSeries
-740b3160589304f82a89331736ec9bdea27839b5 refs/remotes/github/master
-88ffb0aed7baaee5887aa1a08c8af87c728c8c9d refs/remotes/github/settableParams
-ed1b41f0e893df4f630dfecfe417e4ddc79c2119 refs/tags/SRE_V1.0
-^a2662e77ba1815579185fd6bd68a6e2ba3ce31f1
