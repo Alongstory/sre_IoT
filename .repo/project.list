@@ -1,0 +1,14 @@
+SemanticRulesEngine
+SemanticRulesEngine/SRE
+SemanticRulesEngine/libs/Sources/CUnit
+SemanticRulesEngine/libs/Sources/antlr3
+SemanticRulesEngine/libs/Sources/jsmn
+SemanticRulesEngine/libs/Sources/liblzma
+SemanticRulesEngine/libs/Sources/libmodbus
+SemanticRulesEngine/libs/Sources/libwebsockets
+SemanticRulesEngine/libs/Sources/libxml2
+SemanticRulesEngine/libs/Sources/lua
+SemanticRulesEngine/libs/Sources/raptor2
+SemanticRulesEngine/libs/Sources/rasqal
+SemanticRulesEngine/libs/Sources/redland
+SemanticRulesEngine/libs/Sources/zlib

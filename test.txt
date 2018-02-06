@@ -1,0 +1,88 @@
+search device @loc:Grenoble   ==> returns the list of all managed devices 
+search variable @loc:Grenoble  ==> returns the list of all managed sensors 
+search variable usage:Temperature or usage:Voltage or usage:Current ==> combined conditions to filter sensors 
+search variable (usage:Temperature or usage:Voltage) or (usage:Current and @loc:T3) with value < 50  ==> combined conditions to filter sensors 
+search variable @loc:Grenoble with name==temperature or (with unit == A and with value > 15)  ==> filter with loacation, name, unit, value
+All the search variable ... queries can be used for aggregation. Example: 
+avg variable @loc:Grenoble 
+min variable @loc:Grenoble and usage:Temperature with value > 10 
+search variable usage:Temperature or usage:Voltage 
+
+
+To test the Rules Engine, there are some sample lua rule provided within the SRE_examples project.
+NB: In V1.0, you need to have the two folders "SRE_Console/lua/CMS"  and "SRE_Console/lua/scripts"  before testing the rules engine, if not create them manually. 
+NB2: execute "repo sync" to get the latest changes 
+
+Examples of Rules Engine commands: 
+install SRE_Console/lua/mock_rules/AirConditionner.nonsigned    ==> installs the AirConditionner rule 
+install SRE_Console/lua/mock_rules/Heater.nonsigned ==> installs the Heater rule 
+state                                       ==> shows the list of installed rules
+
+
+
+
+
+root@snarc-soca9:~# ./SRE_console
+in SRE_addOntologyFile function Namespace = loc, URI = http://www.schneider.com/location, path = ./SRE_Console/lua/inferred_location.owl
+Starting console ...
+SRE # install SRE_Console/lua/mock_rules/AirConditionner.nonsigned
+[SRE][DEBUG]    (SRE_LUA_InstallValidatedDescriptor:578) The new rule is successfuly added to the registry !!
+SRE # install SRE_Console/lua/mock_rules/Heater.nonsigned
+[SRE][DEBUG]    (SRE_LUA_InstallValidatedDescriptor:578) The new rule is successfuly added to the registry !!
+SRE # info AirConditionner
+SCRIPT INFO : I'am the AirConditionner
+
+SRE # info Heater
+SCRIPT INFO : I'am The Heater
+
+SRE # start Heater
+[SRE][DEBUG]    (SRE_LUA_API_newTimer:200) New timer created : Heater.IncreaseTemperature
+[SRE][DEBUG]    (SRE_LUA_CallFunction:1353) the function 'Heater.init()' called successfully.
+[SRE][DEBUG]    (SRE_LUA_StartScript:1016) Heater 's Init function executed successfully
+SRE # [SRE][DEBUG]      (SRE_LUA_API_validateTimer:235) Timer [1] is starting
+
+SRE # stop [LUA_LOG][info] : Heater has increased the temperature to 15.0 C ...
+Heater
+-- Heater says : Good bye!
+[SRE][DEBUG]    (SRE_LUA_CallFunction:1353) the function 'Heater.finalize()' called successfully.
+SRE #
+SRE #
+SRE # uninstall Heater
+SRE # uninstall AirConditionner
+SRE # ^C
+root@snarc-soca9:~#
+
+
+root@snarc-soca9:~# ./SRE_console
+in SRE_addOntologyFile function Namespace = loc, URI = http://www.schneider.com/location, path = ./SRE_Console/lua/inferred_location.owl
+Starting console ...
+SRE # install SRE_Console/lua/mock_rules/NeraDrive.nonsigned
+[SRE][DEBUG]    (SRE_LUA_InstallValidatedDescriptor:578) The new rule is successfuly added to the registry !!
+SRE # info NeraDrive
+SCRIPT INFO : I'am the NeraDrive
+
+SRE # start NeraDrive
+[SRE][DEBUG]    (SRE_LUA_API_newTimer:200) New timer created : NeraDrive.InspectSpeed
+[SRE][DEBUG]    (SRE_LUA_CallFunction:1353) the function 'NeraDrive.init()' called successfully.
+[SRE][DEBUG]    (SRE_LUA_StartScript:1016) NeraDrive 's Init function executed successfully
+SRE # [SRE][DEBUG]      (SRE_LUA_API_validateTimer:235) Timer [1] is starting
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+[LUA_LOG][warn] : The temperature is too high, decrease it to 15 C degrees.
+uninstall NeraDrive
+-- NeraDrive is leaving ...
+[SRE][DEBUG]    (SRE_LUA_CallFunction:1353) the function 'NeraDrive.finalize()' called successfully.
+SRE # ^C
+root@snarc-soca9:~#
+
+install SRE_Console/lua/mock_rules/SensorTagCC2650.nonsigned
+info SensorTagCC2650
+start SensorTagCC2650
+uninstall SensorTagCC2650

@@ -1,0 +1,73 @@
+# pack-refs with: peeled fully-peeled 
+0c8b1ce7809e813154c0c421533e4a0adf37cac9 refs/remotes/github/README_fix
+f48ddd2a55e3e1c6bb360f8e6a290a7f1ba4d17b refs/remotes/github/coverity_scan
+a42ac7b1fbf6d743ab30fcc448e5a4163fab57d3 refs/remotes/github/fix_readme_format
+027fb683cce46024a1f2112dc4a38a2558fc255a refs/remotes/github/libuv-test
+24e77a04ab341777f4741c406e6288df50c22eac refs/remotes/github/master
+1728988efa97aefdcf6c4feb06877e460880cda2 refs/remotes/github/temp
+55da5d46a5f8dda0e1a9a3cf10b05ea3f48dd923 refs/remotes/github/test
+4bc6f95974226b815fa4e83457a06781f4b0a338 refs/remotes/github/v1.5-stable
+e5823158b375a1013ee6f21e5d1619e7b1d80067 refs/remotes/github/v1.6-stable
+249b2d049b5718847c53b76ac807fe2500d75b1d refs/remotes/github/v1.7-stable
+7270aebadfd0579a0374da430b66ec09fbb3e77e refs/remotes/github/v2.0-stable
+109d66c365a39b3ecdca1a5bccd722820e7bdd6a refs/remotes/github/v2.1-stable
+a047d8582dd3858d4ba3f66622a805b9d6c429cc refs/tags/deflate-stream-support
+893e25a51f7beb98fd13129c8988c43ef7c83dca refs/tags/master-test-2015-11-06-1
+^79a3c5d4253dc56ca5e9a7acfad58ac9372b418c
+8e7914772771fcc7918484116160a9bc4fa8cb2d refs/tags/master-test-2015-11-19-1
+^9494c66d20898ddb39483427c84f152b03cbad28
+f2f54d5d26a878e51d1cb19927750b0978bf3f38 refs/tags/release-0.1
+8322b3700b75f85812c102cbee0dad062cb64483 refs/tags/release-0.2
+a6cbece1acc046c8fadaf7bb82713b9290e6a807 refs/tags/release-0.3
+1f9bf527ec631d64e4a24295ea92dedae974db36 refs/tags/release-0.4
+4eaa86b29192919da65c3614ddcd094905ac14af refs/tags/release-0.5
+788c4a8fa847ce7f6900e529af73f1aed7311ccc refs/tags/release-0.6
+86e82ab22fe69fc263ec185c0e9ee70347546087 refs/tags/support-chrome-20-firefox-12
+bc15798f65f747a170aa40e9ed8ed37e0cb52189 refs/tags/support-protocol-v7
+5bf65788ea380e1e4d6a978bb4459807a14c2724 refs/tags/support-protocol-v8-chrome-15-firefox-6
+6cd1ea9b005933fd5e8e1d4de4cf5c25d25bfea4 refs/tags/v1.0-chrome25-firefox17
+bd1132f9ac662c06c40f67f062c48af525fa9d62 refs/tags/v1.1-chrome26-firefox18
+182cb9ae5f48852cbc95b98ebdedb484d2c3493b refs/tags/v1.2-chrome26-firefox18
+ff5dbf91b1d9a5d0f8b4cebd7bf60c0778b646a2 refs/tags/v1.21-chrome26-firefox18
+c2bb3dc7b399c321123ad98bbfc77c857f35998e refs/tags/v1.22-chrome26-firefox18
+81877e6a4ce78d687f46ec525651813604ce48cc refs/tags/v1.23-chrome32-firefox24
+c1fdd10ff887994622f6f8a9534d4ab5c320c86d refs/tags/v1.3-chrome37-firefox30
+2db42d1b3ae3faafa6edbf7b683f96781ee11a3a refs/tags/v1.4-chrome43-firefox-36
+^16fb0132cec0fcced29bce6d86eaf94a9beb9785
+be7030cc8f1853de578ae6c9ee34fb0aab619373 refs/tags/v1.5-chrome47-firefox41
+^ab620ffde36b3186a6392e75d96d8f7016a2b3f6
+4bc6f95974226b815fa4e83457a06781f4b0a338 refs/tags/v1.5.1
+5421a7756e6488acf151fdfa2633dfc0f7c44504 refs/tags/v1.6.0-chrome48-firefox42
+^f1cf5bec53bd6cfd8011554340346b74e5157495
+9cf4dbe1e7e6f1d9025dbb8c6e510df8aeb9eb42 refs/tags/v1.6.1
+0c034953e9b75a63ceea43d5dbe013d455ce74d0 refs/tags/v1.6.2
+1e9c1a5a1a392a8b9e85046421b71033a62d3244 refs/tags/v1.6.3
+95ae0b9c1050443218e838dfa5bdefdff106bd9f refs/tags/v1.7.0
+^9c60ed9d07e8ef158d759d23903f363c583e99f1
+220fbfe9d45a67587ba750e5d0e30d90153ca4d9 refs/tags/v1.7.1
+^2209ceb3f5ff3cfad7af9a81327012d15d0d5094
+fcfd6984f70c797c478f100af8bea7ac42d1196c refs/tags/v1.7.2
+^34266b786162656f48e63aa81c39f55dc6c72015
+2565913d559402989e146ff0ebe2d29558c710e4 refs/tags/v1.7.3
+^7c8ef848480b2a6e9537112eb797d57ded258814
+6e72b9b30287e694bf8bc340008a9f639e018743 refs/tags/v1.7.4
+^18c328a6313f96fc428bdc37b7799731cd859700
+7c1373aa63145cafc2761a9d7bf33085464d2f02 refs/tags/v1.7.5
+^e3e89a7241230df6d4948281f0307d9df421fe26
+4d0855514f98777903a7741135f8c961e588e220 refs/tags/v1.7.6
+^449e73433c8b0dd9617d9c19270729ec2895e982
+7da06d01823b2b864dc2e361d42db1364c3057c4 refs/tags/v1.7.7
+^29458b105dbf7781c9ec545deea161a5f40b490b
+23c37b3aff674a09db95bdc7a2b242680cde113c refs/tags/v1.7.8
+^6d19521b90eb100ddb17d9c8f54da08931a23cc9
+a085a0ab3838401c7ff9bf2ad8646af633746a14 refs/tags/v1.7.9
+052f2f90c059d7c5de9c0985c588baeb49e2c7fa refs/tags/v2.0.0
+^5500643f3c4561b6fe46259109a558c1e4c05545
+63f1cdf4e7bbdddb86dd05ccb0800d52d0484b36 refs/tags/v2.0.1
+^36699d6ecbd947f94bd5f108ad4d826e343fab7d
+b02f2c5c806409efcb0aeb6d813d81d30541275f refs/tags/v2.0.2
+^b064fb5bc9f21416a98c424b347cee141ef9df6e
+5a247a57d2649b00b5a727e8b60dc8301473e7d0 refs/tags/v2.0.3
+64dd359192b6e7b6399db5ee4bf9647cb7b80476 refs/tags/v2.1-pre3
+73557509bd15f95a1ad081a6f4fab48ff7743215 refs/tags/v2.1.0
+3886ec7246396d5585aece2d9e31453cf62cbbfe refs/tags/valgrind-clean

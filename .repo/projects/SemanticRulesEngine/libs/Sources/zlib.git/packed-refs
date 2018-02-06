@@ -1,0 +1,4 @@
+# pack-refs with: peeled fully-peeled 
+f732b29512d096827ad5b98c9bb513c5e062aa41 refs/remotes/github/master
+e405b2a585a5d752e4768c970273b6625ba2440f refs/tags/v1.2.8
+^f732b29512d096827ad5b98c9bb513c5e062aa41

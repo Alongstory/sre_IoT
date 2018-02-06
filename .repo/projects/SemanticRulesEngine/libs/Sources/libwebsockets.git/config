@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+[filter "lfs"]
+	smudge = git-lfs smudge --skip -- %f
+[remote "github"]
+	url = ssh://github.schneider-electric.com/SESA377732/library_websockets
+	review = https://github.schneider-electric.com
+	projectname = SESA377732/library_websockets
+	fetch = +refs/heads/*:refs/remotes/github/*
